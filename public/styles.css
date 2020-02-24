@@ -1,0 +1,175 @@
+:root {
+    --color-green: rgb(97, 224, 80);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: #130d1ad3;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    padding: 18px;
+    background: rgba(49, 43, 43, 0.575);
+}
+header div {
+    text-align: center;
+}
+
+.links a {
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.links a:hover {
+    font-size: 21px;
+    color: var(--color-green);
+    transition: 0.7s ease;
+}
+
+
+#wrapper {
+    margin: 20px;
+    padding: 30px auto;
+    text-align: center;
+    line-height: 40px;
+}
+
+#wrapper img {
+     border: 2px solid var(--color-green);
+     height: 200px;
+     border-radius: 60%;
+     margin: 30px;
+ }
+
+#wrapper h2, #wrapper h3 {
+    color: white;
+    font-weight: bold;
+}
+
+#wrapper .list {
+   display: flex;
+   justify-content: center;
+}
+
+#wrapper .list ul{                  
+    font-size: 18px;
+    line-height: 20px;
+    list-style-position: inside; 
+    list-style-type: disc;
+    font-weight: bold;
+    text-align: left;        
+}
+
+#wrapper li{
+   padding-top: 10px;
+}
+
+#links-footer {
+    padding: 30px;
+    text-align: center;
+}
+
+.courses {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px;
+    margin: 30px auto;
+}
+
+.card {
+    display: grid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(65, 64, 64, 0.795);
+}
+
+.card:hover{
+    border: 1px solid var(--color-green);
+    transition: 0.6s ease;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.img-container img{
+    width: auto;
+}
+
+.card p {
+    padding-top: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.course-cost {
+    margin-top: 10px;
+    position: relative;
+    background-color: rgba(65, 64, 64, 0.795);
+    filter: brightness(85%);
+    border-radius: 20px;            
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+}
+
+.modal {
+    background-color: white;
+    position: relative;
+    width: 50%;
+    height: 90%;
+    margin: 4vh auto;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close-modal {
+    cursor: pointer;
+    color: #715ac1;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+}
+
+.modal .maximize-modal {
+    cursor: pointer;
+    color: #715ac1;
+    position: absolute;
+    right: 32px;
+    top: 6px;
+}
+
+.modal.maximized {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 36px;
+}
+
+.error {
+    text-align: center;
+    margin: 70px auto;
+    color: white;
+    line-height: 40px;
+}
